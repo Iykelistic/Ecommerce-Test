@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Real Estate Floor Selector App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, interactive web application that allows users to explore residential towers, browse floors, and view detailed apartment layouts. Built with React, featuring smooth animations and responsive design.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Tower Selection**: Browse and select from multiple residential towers
+- **Floor Navigation**: Interactive floor selection with visual floor indicators
+- **Unit Browsing**: View apartment thumbnails with key metadata (area, bedrooms, bathrooms, price)
+- **Detailed Unit View**: Full apartment specifications with high-quality images
+- **Breadcrumb Navigation**: Easy navigation between different levels
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Smooth Animations**: Hover effects, scaling transitions, and micro-interactions
+- **Modern UI**: Clean, professional design with intuitive user experience
 
-### `npm start`
+## Tech Stack
+### Core Technologies
+- **React 18.3.1** - Frontend framework with hooks and functional components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Styling & UI
+- **Tailwind CSS 3.4.1** - Utility-first CSS framework for rapid styling
+- **Lucide React 0.344.0** - Beautiful, customizable SVG icons
+- **PostCSS 8.4.35** - CSS processing with Autoprefixer
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository
+```bash
+git clone <repository-url>
+cd realestate-app
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies
+```bash
+npm install
+```
 
-### `npm run eject`
+3. Start the development server
+```bash
+npm run dev
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Current Limitations
+1. **Mock Data**: All tower, floor, and unit data is generated programmatically rather than fetched from a real API
+2. **Image Placeholders**: Uses Pexels stock photos as placeholder images instead of actual property photos
+3. **No Persistence**: User selections and favorites are not saved between sessions
+4. **No Search/Filter**: No ability to search or filter units by criteria (price, size, etc.)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Performance Considerations
+1. **Image Loading**: External images from Pexels may load slowly depending on network conditions
+2. **Re-renders**: Component re-renders entire view on state changes rather than using optimized sub-components
+3. **Memory Usage**: Generates unit data on each render instead of memoizing results
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Future Enhancements
+- Integrate with real estate API
+- Add unit comparison features
+- Add booking/scheduling system
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
