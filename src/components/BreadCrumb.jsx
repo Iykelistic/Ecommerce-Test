@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, ArrowLeft } from 'lucide-react';
+import { Building2 } from 'lucide-react';
 
 export default function BreadCrumb({
   selectedTower, selectedFloor, selectedUnit,
