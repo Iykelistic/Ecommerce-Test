@@ -1,17 +1,4 @@
-# Real Estate Floor Selector App
 
-A modern, interactive web application that allows users to explore residential towers, browse floors, and view detailed apartment layouts. Built with React, featuring smooth animations and responsive design.
-
-## Features
-
-- **Tower Selection**: Browse and select from multiple residential towers
-- **Floor Navigation**: Interactive floor selection with visual floor indicators
-- **Unit Browsing**: View apartment thumbnails with key metadata (area, bedrooms, bathrooms, price)
-- **Detailed Unit View**: Full apartment specifications with high-quality images
-- **Breadcrumb Navigation**: Easy navigation between different levels
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Smooth Animations**: Hover effects, scaling transitions, and micro-interactions
-- **Modern UI**: Clean, professional design with intuitive user experience
 
 ## Tech Stack
 ### Core Technologies
@@ -45,22 +32,14 @@ npm install
 
 3. Start the development server
 ```bash
-npm run dev
+npm start
 ```
 
-### Current Limitations
-1. **Mock Data**: All tower, floor, and unit data is generated programmatically rather than fetched from a real API
-2. **Image Placeholders**: Uses Pexels stock photos as placeholder images instead of actual property photos
-3. **No Persistence**: User selections and favorites are not saved between sessions
-4. **No Search/Filter**: No ability to search or filter units by criteria (price, size, etc.)
+### Deliverables
+**Layout Approach**: I used a card-based design with a vertical layout that prioritizes visual hierarchy - image at top, product details in the middle, and action elements at the bottom. This creates a scannable, consistent experience across all products.
 
-### Performance Considerations
-1. **Image Loading**: External images from Pexels may load slowly depending on network conditions
-2. **Re-renders**: Component re-renders entire view on state changes rather than using optimized sub-components
-3. **Memory Usage**: Generates unit data on each render instead of memoizing results
+**Responsiveness Considerations**: The design uses a mobile-first responsive grid that scales from single column on mobile devices to up to 4 columns on large screens, with careful attention to touch targets and readable text sizes across all breakpoints.
 
-## Future Enhancements
-- Integrate with real estate API
-- Add unit comparison features
-- Add booking/scheduling system
+### Features
+The cards include hover animations, proper loading states, variant dropdown functionality, and dynamic pricing display. The out-of-stock handling works both at the product level and individual variant level, with appropriate visual feedback throughout.
 
