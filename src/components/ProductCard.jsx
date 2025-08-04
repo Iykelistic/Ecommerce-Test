@@ -3,7 +3,7 @@ import { ShoppingCart, Package } from 'lucide-react';
 
 export const ProductCard = ({ product, onAddToCart }) => {
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
-  const [isHovered, setIsHovered] = useState(false);
+
 
   const isOutOfStock = !product.inStock || selectedVariant.stock === 0;
   const hasVariants = product.variants.length > 1;
@@ -25,8 +25,7 @@ export const ProductCard = ({ product, onAddToCart }) => {
   return (
     <div 
       className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 group"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+  
     >
       {/* Product Image */}
       <div className="relative overflow-hidden bg-gray-50">
